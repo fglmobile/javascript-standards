@@ -185,7 +185,7 @@ Array constructors [can cause issues](https://google-styleguide.googlecode.com/s
 For consistency, always declare functions as anonymous function expressions (with a `var` keyword). This implies that all functions must be declared *before* they are used.
 
 ```javascript
-thisFunction(); // Do not use functions before they are declared.
+thisFunction(); // Do NOT try to use functions before they are declared.
 
 var thisFunction = function () {
   // Stuff
@@ -398,8 +398,8 @@ Foo.prototype.bar = function() {
   var x = 42; // We can also comment like this
   
   /* Commenting parts of a line is acceptable (but try to avoid doing this
-   * in production code). Did you notice that this is a multi-line comment?
-   */
+    * in production code). Did you notice that this is a multi-line comment?
+    */
   var myFunction = function(arg0, arg1, /* arg2 */);
   
   // Don't
@@ -407,9 +407,9 @@ Foo.prototype.bar = function() {
   // This,
 
   /* Do
-   * this
-   * instead.
-   */
+    * this
+    * instead.
+    */
   ```
   
   - Comments should have a space after the commenting syntax and start with a capital letter unless the comment begins with a function reference.
@@ -418,8 +418,8 @@ Foo.prototype.bar = function() {
   // This is a comment
 
   /* As is this. This is actually a multi-line comment; lets pad it out
-   * a bit by talking gibberish.
-   */
+    * a bit by talking gibberish.
+    */
 
   // functionReference does a thing.
   ```
@@ -430,28 +430,28 @@ Foo.prototype.bar = function() {
   
   ```javascript
   /**
-   * Represents a book.
-   * @constructor
-   * @param {string} title - The title of the book.
-   * @param {string} author - The author of the book.
-   */
+    * Represents a book.
+    * @constructor
+    * @param {string} title - The title of the book.
+    * @param {string} author - The author of the book.
+    */
   function Book(title, author) {
     // This is a class constructor
   };
 
   /**
-   * A function with no arguments.
-   */
+    * A function with no arguments.
+    */
   var myFunction = function myFunction() {
     // A simple every day function
   };
 
   /**
-   * Returns the sum of a and b.
-   * @param {Number} a - A number
-   * @param {Number} b - Another number
-   * @returns {Number} Sum of a and b
-   */
+    * Returns the sum of a and b.
+    * @param {Number} a - A number
+    * @param {Number} b - Another number
+    * @returns {Number} Sum of a and b
+    */
   var sum = function sum(a, b) {
     return a + b;
   };
