@@ -225,7 +225,7 @@ Foo.prototype.bar = function() {
 
 ## Whitespace
 
-  - Lines should be less than 80 columns (characters), and definitely no more than 100 columns.
+  - Try to keep lines at less than 80 columns (characters) and if possible no more than 100 columns.
   
   - Block braces `{ }` should begin on the same line as the keyword initiating the block.
   
