@@ -146,7 +146,7 @@ function () {
 }
 ```
 
-Strings should always use `'` single quotes instead of `"` double quotes.
+With strings, prefer the use of `'` single quotes instead of `"` double quotes. Where you need to use `'` within a string, use `\'` or if you can use `"` (preferred in html strings), do that instead.
 
 ```javascript
 // BAD
@@ -154,6 +154,7 @@ var myString = "Bad string!";
 
 // GOOD
 var myString = 'Good string!';
+var htmlString = '<div class="bacon"></div>';
 ```
 
 **[§ back to contents](#table-of-contents)**
@@ -250,7 +251,7 @@ Foo.prototype.bar = function() {
   };
   ```
 
-  - One space between `if`, `while`, `for`, `switch` etc and brackets; one space before the leading `{` brace.
+  - One space between `if`, `while`, `for`, `switch` etc and brackets; one space before the leading `{` brace. 
   
   ```javascript
   if (condition) {
@@ -280,7 +281,8 @@ Foo.prototype.bar = function() {
   myVar = A_CONSTANT_VALUE;
   if (myVar) {
     // Do something useful
-  } else {
+  }
+  else {
     // Do something useful
   }
   
@@ -312,10 +314,14 @@ Foo.prototype.bar = function() {
     argumentC, argumentD, argumentE);
   ```
   
-  - One filler space in empty functions, object or array constructs. No filler space in function argument lists.
+  - One filler space in empty functions, object or array constructs. No filler space in function argument lists unless the argument is an object or array literal or an anonymous function
   
   ```javascript
   var aFunction = function() { }; // No space within (), but one within { }
+
+  var objectFunction = function( { theValue: 50 } ) { };
+  var arrayFunction = function( [0, 1, 2, 3] ) { };
+  var functionFunction = function( function() { /* ... */ } ) { };
 
   var anObject = { }; // Empty object
   var anArray = [ ]; // Empty array
@@ -442,7 +448,7 @@ Foo.prototype.bar = function() {
   /**
    * A function with no arguments.
    */
-  var myFunction = function myFunction() {
+  var myFunction = function() {
     // A simple every day function
   };
 
@@ -452,9 +458,17 @@ Foo.prototype.bar = function() {
    * @param {Number} b - Another number
    * @returns {Number} Sum of a and b
    */
-  var sum = function sum(a, b) {
+  var sum = function(a, b) {
     return a + b;
   };
+
+  /**
+   * Private function.
+   * @private
+   */
+  var aSecretFunction = function() {
+    // Private secret stuff.
+  }
   ```
 
 **[§ back to contents](#table-of-contents)**
