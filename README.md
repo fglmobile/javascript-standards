@@ -185,7 +185,7 @@ Array constructors [can cause issues](https://google-styleguide.googlecode.com/s
 For consistency, always declare functions as anonymous function expressions (with a `var` keyword). This implies that all functions must be declared *before* they are used.
 
 ```javascript
-thisFunction(); // Do not use functions before they are declared.
+thisFunction(); // Do NOT try to use functions before they are declared.
 
 var thisFunction = function () {
   // Stuff
