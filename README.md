@@ -480,7 +480,7 @@ Foo.prototype.bar = function() {
 
 ## Features to Avoid
 
-  - `delete` - prefer settig to `null`; deletion of objects is costly and unnecessary.
+  - `delete` - prefer setting to `null`; deletion of objects is costly and unnecessary.
 
   - `with` - avoid colliding properties on objects to begin with - can lead to confusion [and bugs](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml?showone=with___%7B%7D#with___%7B%7D). Note that `with` is prohibited in strict mode.
 
