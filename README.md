@@ -436,36 +436,36 @@ Foo.prototype.bar = function() {
   
   ```javascript
   /**
-   * Represents a book.
-   * @constructor
-   * @param {string} title - The title of the book.
-   * @param {string} author - The author of the book.
-   */
+  &nbsp;* Represents a book.
+  &nbsp;* @constructor
+  &nbsp;* @param {string} title - The title of the book.
+  &nbsp;* @param {string} author - The author of the book.
+  &nbsp;*/
   function Book(title, author) {
     // This is a class constructor
   };
 
   /**
-   * A function with no arguments.
-   */
+  &nbsp;* A function with no arguments.
+  &nbsp;*/
   var myFunction = function() {
     // A simple every day function
   };
 
   /**
-   * Returns the sum of a and b.
-   * @param {Number} a - A number
-   * @param {Number} b - Another number
-   * @returns {Number} Sum of a and b
-   */
+  &nbsp;* Returns the sum of a and b.
+  &nbsp;* @param {Number} a - A number
+  &nbsp;* @param {Number} b - Another number
+  &nbsp;* @returns {Number} Sum of a and b
+  &nbsp;*/
   var sum = function(a, b) {
     return a + b;
   };
 
   /**
-   * Private function.
-   * @private
-   */
+  &nbsp;* Private function.
+  &nbsp;* @private
+  &nbsp;*/
   var aSecretFunction = function() {
     // Private secret stuff.
   }
