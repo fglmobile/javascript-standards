@@ -403,7 +403,8 @@ Foo.prototype.bar = function() {
   // This is a comment for some code
   var x = 42; // We can also comment like this
   
-  /* Commenting parts of a line is acceptable (but try to avoid doing this
+  /*
+    * Commenting parts of a line is acceptable (but try to avoid doing this
     * in production code). Did you notice that this is a multi-line comment?
     */
   var myFunction = function(arg0, arg1, /* arg2 */);
@@ -412,7 +413,8 @@ Foo.prototype.bar = function() {
   // Do
   // This,
 
-  /* Do
+  /*
+    * Do
     * this
     * instead.
     */
@@ -423,7 +425,8 @@ Foo.prototype.bar = function() {
   ```javascript
   // This is a comment
 
-  /* As is this. This is actually a multi-line comment; lets pad it out
+  /*
+    * As is this. This is actually a multi-line comment; lets pad it out
     * a bit by talking gibberish.
     */
 
