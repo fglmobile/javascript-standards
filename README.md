@@ -7,6 +7,8 @@ The FGL JavaScript Style Guide is largely based on practices from previously pub
 
 For anything that is not mentioned specifically in the style guide, refer to (in order of priority) the [Google JavaScript Style Guide], [Airbnb JavaScript Style Guide] and other code in our codebase. Most importantly, if it looks like a messy hack-job **it probably is**.
 
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](http://www.ietf.org/rfc/rfc2119.txt).
+
 ---
 
 ##Table of Contents
@@ -480,7 +482,9 @@ Foo.prototype.bar = function() {
 
 ## Features to Avoid
 
-  - `delete` - prefer setting to `null`; deletion of objects is costly and unnecessary.
+The following language features are not recommended; avoid them if possible.
+
+  - `delete` - prefer setting to `null`; deletion of objects is costly and usually unnecessary.
 
   - `with` - avoid colliding properties on objects to begin with - can lead to confusion [and bugs](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml?showone=with___%7B%7D#with___%7B%7D). Note that `with` is prohibited in strict mode.
 
